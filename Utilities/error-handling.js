@@ -4,7 +4,6 @@ const ErrCatcher = (err, req, res, next) => {
   if (!err) {
     return next();
   }
-
   if (err.name === "TypeError") {
     return errorResponse(
       { err_code: 401, message: "Please enter token" },

@@ -65,9 +65,7 @@ const errorResponse = (result,res) => {
   };
 
   const dateParser = (str) => {
-      
     let datelist = str.split('/')
-    console.log(datelist)
     let newdate = new Date(`${datelist[2]}/${datelist[1]}/${datelist[0]}`)
     return newdate
 }
